@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>作品頁</title>
+        <link rel="icon" type="image/x-icon" href="imges/Himari.jpeg">
+        <meta charset="UTF-8">
+
+        <meta name="description" content="html learning">
+        <!-- SEO 搜尋關鍵字 中英皆可 -->
+
+         <meta name="keywords" content="html, Css, java">
+         <meta name="author" content="Himari">
+         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+         <!-- RWD符合各尺寸大小 使用一樣的尺寸呈現 -->
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            @media(max-width: 400px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            @media(max-width: 800px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            body{
+                background-image: url(imges/background.png);
+                background-attachment:fixed;
+                background-size:  1920px 1080px;
+                font-family: "微軟正黑體";
+                text-align: center;
+                margin: 0;
+                padding: 40px 0;
+            }
+            header, nav, footer{
+                padding: 15px;
+                text-align: center;
+            }
+            nav{
+                flex: 0 0 100%;
+                text-align:center;
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            nav a{
+                margin: 0 30px;
+                text-decoration: none;
+                color: rgb(116, 110, 107);
+                font-weight: bold;
+            }
+            footer{
+                font-size: 12px;
+                text-align: center;
+                color: rgb(63, 63, 63);
+
+            }
+            div{
+                background-color: rgb(255, 247, 201);
+                text-align: center;
+                padding: 20px;
+            }
+
+
+            section{
+                padding: 20px;
+            }
+            .container{
+                display: flex;
+                /* Flexbox的三欄排版 */
+                gap: 20px;
+                /* 欄位之間的距離固定 */
+            }
+            .box{
+                flex: 1;
+                background: rgb(255, 217, 203);
+                padding: 30px;
+            }
+            .card-container{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                flex-wrap: wrap;
+                /* 如果超過會自動換行 */
+            }
+            .card{
+                width: 500px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 12px;
+                overflow: hidden;
+                /* 如果圖片超過卡片，會自動遮罩 */
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                transition: 0.3s;
+            }
+            .card:hover{
+                transform: scale(1.1);
+                background-color: rgb(255, 255, 255);
+                color: rgb(218, 180, 13);
+            }
+            .card img{
+                width: 100%;
+                display: block;
+            }
+            .intro-box{
+                max-width: 100%;
+                background-color: rgb(255, 255, 255);
+                padding: 15px 20px;
+                border-radius: 8px;
+                border: 1px solid rgb(209, 209, 157);
+            }
+            .mybtn{
+                padding: 18px 50px;
+                background-color: rgb(255, 255, 255);
+                margin: 6px;
+                border-radius: 8px;
+                border: none;
+                font-size: 12px;
+                color: rgb(92, 70, 29);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><img src="imges/HINA.png" width="300px"></a>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <!-- 導航頁 -->
+        </nav>
+        
+        <div>
+        <section>
+            <div class="intro-box">
+                <h2>2D動畫</h2>
+            </div>
+            <div class="card-container">
+                <div class="card"> 
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/V1.mp4" type="video/mp4">
+                    </video>
+                    <h3>日系動畫</h3>
+                    <p>人物動畫練習繪製過程圖</p>
+                </div>
+
+                <div class="card"> 
+                    <video controls style="width:40%; height:auto;">
+                        <source src="video/PEKO.mp4" type="video/mp4">
+                    </video>
+                    <h3>跳舞動畫</h3>
+                    <p>人物舞蹈動畫</p>
+                </div>
+
+                <div class="card"> 
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/V4.mp4" type="video/mp4">
+                    </video>
+                    <h3>動畫PV</h3>
+                    <p>人物PV動畫</p>
+                </div>
+
+
+                <div class="card">
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/deadendwork.mp4" type="video/mp4">
+                    </video>
+                    <h3>冥界打工人</h3>
+                    <p>Dead-End Job</p>
+                </div>
+
+                <div class="card"> 
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/present an idea about AI.mp4" type="video/mp4">
+                    </video>
+                    <h3>身體偵測AI</h3>
+                    <p>present an idea about AI</p>
+                </div>
+
+                <div class="card">
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/summer.mp4" type="video/mp4">
+                    </video>
+                    <h3>那年夏天</h3>
+                    <p>動態分鏡練習</p>
+                </div>
+
+                <div class="card">
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/2222.mp4" type="video/mp4">
+                    </video>
+                    <h3>生日快樂</h3>
+                    <p>生日大爆炸</p>
+                </div>
+                
+                
+            </div>
+
+            
+                
+            </div>
+            <div class="intro-box">
+                <h2>AE動畫</h2>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/AE1.mp4" type="video/mp4">
+                    </video>
+                    <h3>AE運鏡</h3>
+                    <p>AE空鏡頭運鏡應用</p>
+                </div>
+
+                <div class="card"> 
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/AE2.mp4" type="video/mp4">
+                    </video>
+                    <h3>AE人物動態</h3>
+                    <p>人物動畫練習</p>
+                </div>
+
+                <div class="card">
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/AE3.mp4" type="video/mp4">
+                    </video>
+                    <h3>PV片頭製作</h3>
+                    <p>特效片頭練習</p>
+                </div>
+            </div>
+
+
+
+            <div class="intro-box">
+                <h2>Live2D動畫</h2>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/Scene.mp4" type="video/mp4">
+                    </video>
+                    <h3>人物循環動畫</h3>
+                    <p>人物動態設計</p>
+                </div>
+                
+                <div class="card"> 
+                    <img src="imges/S2.gif" style="width: 100%; height:auto;">
+                    <h3>春轉冬小動畫</h3>
+                    <p>動畫表演練習</p>
+                </div>
+
+                <div class="card">
+                    <img src="imges/S3.gif" style="width:100%; height:auto;">
+                    <h3>魔法麻雀</h3>
+                    <p>植物生長之術</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="intro-box">
+                <h2>3D動畫</h2>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="imges/1.gif">
+                    <h3>小羊跳欄</h3>
+                    <p>無限數羊小動畫</p>
+                </div>
+
+                <div class="card"> 
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/2.mp4" type="video/mp4">
+                    </video>
+                    <h3>劫匪小動畫</h3>
+                    <p>劫匪被嚇到的動畫表演練習</p>
+                </div>
+
+                <div class="card">
+                    <video controls style="width:100%; height:auto;">
+                        <source src="video/3.mp4" type="video/mp4">
+                    </video>
+                    <h3>邦尼蛋糕店</h3>
+                    <p>3D可愛動物動畫</p>
+                </div>
+
+                <br>
+            <button onclick="document.location='Works.html'" class="mybtn">返回</button>
+            </div>
+
+
+            
+        </section>
+
+        </div>
+        
+
+        <footer> Himari. All rights reserved @2026</footer>
+    </body>
+</html>

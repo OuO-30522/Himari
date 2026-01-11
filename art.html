@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>作品頁</title>
+        <link rel="icon" type="image/x-icon" href="imges/Himari.jpeg">
+        <meta charset="UTF-8">
+
+        <meta name="description" content="html learning">
+        <!-- SEO 搜尋關鍵字 中英皆可 -->
+
+         <meta name="keywords" content="html, Css, java">
+         <meta name="author" content="Himari">
+         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+         <!-- RWD符合各尺寸大小 使用一樣的尺寸呈現 -->
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            @media(max-width: 400px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            @media(max-width: 800px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            body{
+                background-image: url(imges/background.png);
+                background-attachment:fixed;
+                background-size:  1920px 1080px;
+                font-family: "微軟正黑體";
+                text-align: center;
+                margin: 0;
+                padding: 40px 0;
+            }
+            header, nav, footer{
+                padding: 15px;
+                text-align: center;
+            }
+            nav{
+                flex: 0 0 100%;
+                text-align:center;
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            nav a{
+                margin: 0 30px;
+                text-decoration: none;
+                color: rgb(116, 110, 107);
+                font-weight: bold;
+            }
+            footer{
+                font-size: 12px;
+                text-align: center;
+                color: rgb(63, 63, 63);
+
+            }
+            div{
+                background-color: rgb(255, 247, 201);
+                text-align: center;
+                padding: 20px;
+            }
+
+
+            section{
+                padding: 20px;
+            }
+            .container{
+                display: flex;
+                /* Flexbox的三欄排版 */
+                gap: 20px;
+                /* 欄位之間的距離固定 */
+            }
+            .box{
+                flex: 1;
+                background: rgb(255, 217, 203);
+                padding: 30px;
+            }
+            .card-container{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                flex-wrap: wrap;
+                /* 如果超過會自動換行 */
+            }
+            .card{
+                width: 300px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 12px;
+                overflow: hidden;
+                /* 如果圖片超過卡片，會自動遮罩 */
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                transition: 0.3s;
+            }
+            .card:hover{
+                transform: scale(1.1);
+                background-color: rgb(255, 255, 255);
+                color: rgb(218, 180, 13);
+            }
+            .card img{
+                width: 100%;
+                display: block;
+            }
+            .intro-box{
+                max-width: 100%;
+                background-color: rgb(255, 255, 255);
+                padding: 15px 20px;
+                border-radius: 8px;
+                border: 1px solid rgb(209, 209, 157);
+            }
+            .mybtn{
+                padding: 18px 50px;
+                background-color: rgb(255, 255, 255);
+                margin: 6px;
+                border-radius: 8px;
+                border: none;
+                font-size: 12px;
+                color: rgb(92, 70, 29);
+                transition: 0.3s;
+            }
+            .mybtn:hover{
+                transform: scale(1.1);
+                background-color: rgb(211, 204, 163);
+                color: rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><img src="imges/HINA.png" width="300px"></a>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <!-- 導航頁 -->
+        </nav>
+        
+        <div>
+        <section>
+            <div class="intro-box">
+                <h2>LOGO</h2>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="imges/L1.png" >
+                </div>
+
+                <div class="card">
+                    <img src="imges/LOGO.png">
+                </div>
+
+                <div class="card">
+                    <img src="imges/D.png">
+                </div>
+
+                <div class="card">
+                    <img src="imges/P.png">
+                </div>
+
+                <div class="card">
+                    <img src="imges/G.png">
+                </div>
+
+            </div>
+
+            <div class="intro-box">
+                <h2>貼圖與場景</h2>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="imges/img.png" >
+                </div>
+
+                <div class="card">
+                    <img src="imges/image (1).png">
+                </div>
+
+                <div class="card">
+                    <img src="imges/f (1).png">
+                </div>
+
+                <div class="card">
+                    <img src="imges/f (2).png">
+                </div>
+
+
+            </div>
+
+            <div class="intro-box">
+                <h2>插畫</h2>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="imges/STR.png" >
+                </div>
+
+                <div class="card">
+                    <img src="imges/2022.png">
+                </div>
+
+                <div class="card">
+                    <img src="imges/305.png" style="width: 200; height:auto;">
+                </div>
+
+                <div class="card">
+                    <img src="imges/1212.jpg">
+                </div>
+
+                <div class="card">
+                    <img src="imges/me.jpg">
+                </div>
+
+                <div class="card">
+                    <img src="imges/gugugaga.png">
+                </div>
+
+            </div>
+                
+                <div class="intro-box">
+                    <h2>角色設計</h2>
+                </div>
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="imges/Xzsas.png" >
+                    </div>
+                    <div class="card">
+                        <img src="imges/Cart (1).png" >
+                    </div>
+                    <div class="card">
+                        <img src="imges/Cart (2).png" >
+                    </div>
+                    <div class="card">
+                        <img src="imges/Cart (3).png" >
+                    </div>
+                    <div class="card">
+                        <img src="imges/Cart (4).png" >
+                    </div>
+                    <div class="card">
+                        <img src="imges/5X.png" >
+                    </div>
+                </div>
+
+                <div class="intro-box">
+                    <h2>VTuber</h2>
+                </div>
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="imges/342.png" >
+                    </div>
+                    <div class="card">
+                        <img src="imges/34T.png" >
+                    </div>
+                    
+                </div>
+                <div>
+                    <button onclick="document.location='https://www.youtube.com/@WushiLiling'" class="mybtn">舞獅璃鈴YT</button>
+                </div>
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="imges/ASS.jpg" >
+                    </div>
+                    <div class="card">
+                        <img src="imges/SSA.jpg" >
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+
+            <div>
+                <button onclick="document.location='Works.html'" class="mybtn">返回</button>
+            </div>
+            
+
+        </section>
+
+        </div>
+        
+
+        <footer> Himari. All rights reserved @2026</footer>
+    </body>
+</html>

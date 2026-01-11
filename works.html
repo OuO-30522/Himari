@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>作品頁</title>
+        <link rel="icon" type="image/x-icon" href="imges/Himari.jpeg">
+        <meta charset="UTF-8">
+
+        <meta name="description" content="html learning">
+        <!-- SEO 搜尋關鍵字 中英皆可 -->
+
+         <meta name="keywords" content="html, Css, java">
+         <meta name="author" content="Himari">
+         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+         <!-- RWD符合各尺寸大小 使用一樣的尺寸呈現 -->
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            @media(max-width: 400px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            @media(max-width: 800px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            body{
+                background-image: url(imges/background.png);
+                background-attachment:fixed;
+                background-size:  1920px 1080px;
+                font-family: "微軟正黑體";
+                text-align: center;
+                margin: 0;
+                padding: 40px 0;
+            }
+            header, nav, footer{
+                padding: 15px;
+                text-align: center;
+            }
+            nav{
+                flex: 0 0 100%;
+                text-align:center;
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            nav a{
+                margin: 0 30px;
+                text-decoration: none;
+                color: rgb(116, 110, 107);
+                font-weight: bold;
+            }
+            footer{
+                font-size: 12px;
+                text-align: center;
+                color: rgb(63, 63, 63);
+
+            }
+            div{
+                background-color: rgb(255, 247, 201);
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 2px;
+            }
+
+
+            section{
+                padding: 20px;
+            }
+            .container{
+                display: flex;
+                /* Flexbox的三欄排版 */
+                gap: 20px;
+                /* 欄位之間的距離固定 */
+            }
+            .box{
+                flex: 1;
+                background: rgb(255, 217, 203);
+                padding: 30px;
+            }
+            .card-container{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                flex-wrap: wrap;
+                /* 如果超過會自動換行 */
+            }
+            .card{
+                width: 320px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 12px;
+                overflow: hidden;
+                /* 如果圖片超過卡片，會自動遮罩 */
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                transition: 0.3s;
+            }
+            .card:hover{
+                transform: scale(1.1);
+                background-color: rgb(255, 255, 255);
+                color: rgb(218, 180, 13);
+            }
+            .card img{
+                width: 100%;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><img src="imges/HINA.png" width="300px"></a>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <!-- 導航頁 -->
+        </nav>
+        
+        <div>
+        <section>
+            <div class="card-container">
+
+                <div class="card" onclick="document.location='anime.html'">
+                    <img src="imges/V1.gif">
+                    <h3>動畫</h3>
+                </div>
+
+                <div class="card" onclick="document.location='art.html'">
+                    <img src="imges/ART.gif">
+                    <h3>插畫</h3>
+                </div>
+
+                <div class="card" onclick="document.location='3d.html'">
+                    <img src="imges/untitled2.png">
+                    <h3>3D</h3>
+                </div>
+
+                <div class="card" onclick="document.location='game.html'">
+                    <img src="imges/G1.gif" style="width: 100%; height:auto;">
+                    <h3>GAME</h3>
+                </div>
+                
+            </div>
+        </section>
+
+        </div>
+        
+
+        <footer> Himari. All rights reserved @2026</footer>
+    </body>
+</html>

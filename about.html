@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>關於我</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="imges/Himari.jpeg">
+        <style>
+           @media(max-width: 400px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            @media(max-width: 800px){
+                .container{
+                    grid-template-columns:1fr
+                }
+            }
+            body{
+                background-image: url(imges/background.png);
+                background-attachment:fixed;
+                background-size:  1920px 1080px;
+                font-family: "微軟正黑體";
+                text-align: center;
+                margin: 0;
+                padding: 40px 0;
+            }
+            header, nav, footer{
+                padding: 15px;
+                text-align: center;
+            }
+            nav{
+                flex: 0 0 100%;
+                text-align:center;
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            nav a{
+                margin: 0 30px;
+                text-decoration: none;
+                color: rgb(116, 110, 107);
+                font-weight: bold;
+            }
+            footer{
+                font-size: 12px;
+                text-align: center;
+                color: rgb(63, 63, 63);
+
+            }
+            div{
+                background-color: rgb(255, 247, 201);
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 2px;
+            }
+            .mybtn{
+                padding: 18px 25px;
+                background-color: rgb(255, 255, 255);
+                margin: 6px;
+                border-radius: 8px;
+                border: none;
+                font-size: 12px;
+                color: rgb(92, 70, 29);
+                transition: 0.3s;
+            }
+            .mybtn:hover{
+                transform: scale(1.1);
+                background-color: rgb(211, 204, 163);
+                color: rgb(255, 255, 255);
+            }
+            .intro-box{
+                max-width: 100%;
+                background-color: rgb(255, 248, 157);
+                margin-bottom: 30px;
+                padding: 20px 30px;
+                border-radius: 80px;
+                border: 1px solid rgb(209, 209, 157);
+            }
+            .link{
+                padding: 18px 25px;
+                background-color: rgb(255, 255, 255);
+                margin-bottom: 5px;
+                border-radius: 10px;
+                border: none;
+                text-decoration: none;
+                font-size: 12px;
+                color: rgb(92, 70, 29);
+            }
+            .link:hover{
+                background-color: rgb(211, 204, 163);
+                color: rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><img src="imges/HINA.png" width="300px"></a>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <!-- 導航頁 -->
+        </nav>
+        <section>
+            <div>
+                <div class="intro-box">
+                    Contact
+                </div>
+                <button onclick="document.location='mailto:qr790533@gmail.com'" class="mybtn" >Email: qr790533@gmail.com</button>
+                <button onclick="document.location='https://discord.com/'" class="mybtn" >DC: hinatsuhimari</button>
+                <button onclick="document.location='https://x.com/HinatsuHimari'" class="mybtn" >X: ʚʜɪᴍᴀʀɪɞ @HinatsuHimari</button>
+                <button onclick="document.location='https://www.instagram.com/hinatsu_himari/?hl=zh-tw'" class="mybtn" >IG: hinatsu_himari</button>
+                <button onclick="document.location='https://www.youtube.com/@himari0725'"class="mybtn">YT: 小葵 Himari</button>
+                <button onclick="document.location='https://www.facebook.com/profile.php?id=100014318592363'"class="mybtn">FB: 日夏 ひまり</button>
+                <button onclick="document.location='https://www.twitch.tv/hinatsuhimari'"class="mybtn">Twitch: 日夏ひまり</button>
+            </div>
+        
+        <div>
+            <div class="intro-box">
+               Edvcation
+            </div>
+            <button class="mybtn">台南應用科技大學多媒體動畫系 Tainan University of Technology Multimedia Animation</button>
+            <br>
+            <button class="mybtn">長榮高級中學多媒體設計系 Chang Jung Senior High School Department of Multimedia Design</button>
+        </div>
+        <div>
+            <div class="intro-box">
+               Relevant licenses
+            </div>
+            <button class="mybtn">中華民國技術士 - 視覺傳達設計丙級-2020/07/29</button>
+            <br>
+            <button class="mybtn">中華民國技術士 - 印前製成  - 圖文組版PC 丙級-2021/04/14</button>
+            <br>
+            <button class="mybtn">TQC+  網頁編輯製作 單一級-2022/01/14</button>
+            <br>
+            <button class="mybtn">Acoustica Mixcraft Certified Associate Program Level 1 -2020/12/14</button>
+        </div>
+        <div>
+            <div class="intro-box">
+               Competition experience
+            </div>
+            <button class="mybtn">2020 第四屆全國高中職會展活動企劃競賽-佳作</button>
+            <button class="mybtn">2020 創意設計競賽「創意X原創第二屆Vtuber角色設計大賽」-入圍獎</button>
+            <button class="mybtn">109 年度全國高中職學生智慧生活創意設計比賽-入圍複賽</button>
+            <button class="mybtn">2023 IYDA 國際青年數位藝術展「驚天動地!shake up!-入圍獎</button>
+            <button class="mybtn">2024 IYDA第四屆國際青年數位藝術展 Mirror-Realm 鏡境-入圍獎  </button>
+            <button class="mybtn">2024元宇宙虛擬網紅創作設計大賽-優選/人氣獎銀賞</button>
+            <button class="mybtn">2025元宇宙虛擬網紅創作設計大賽－我是最佳代言人-優選/人氣優勝獎</button>
+        </div>
+        <div>
+            <div class="intro-box">
+               My Skills
+            </div>
+            <button class="mybtn">Adobe Photoshop</button>
+            <button class="mybtn">Adobe Illustrator</button>
+            <button class="mybtn">Adobe InDesign</button>
+            <button class="mybtn">Adobe Dreamweaver</button>
+            <button class="mybtn">Adobe Animate</button>
+            <button class="mybtn">Adobe After Effects</button>
+            <button class="mybtn">Adobe Premiere</button>
+            <button class="mybtn">Adobe Flash</button>
+            <button class="mybtn">Cartoon Animator 4</button>
+            <button class="mybtn">Mixcraft 7</button>
+            <button class="mybtn">GarageBand</button>
+            <button class="mybtn">Logic Pro</button>
+            <button class="mybtn">Audacity</button>
+            <button class="mybtn">Clip Studio Paint</button>
+            <button class="mybtn">Paint Tool SAI</button>
+            <button class="mybtn">medibang paint</button>
+            <button class="mybtn">Live2D Cubism Editor</button>
+            <button class="mybtn">TVPaint</button>
+            <button class="mybtn">Vroid Studio</button>
+            <button class="mybtn">tinkercad</button>
+            <button class="mybtn">ToonBoom Studio V2</button>
+            <button class="mybtn">Blender</button>
+            <button class="mybtn">Maya</button>
+            <button class="mybtn">Unity</button>
+        </div>
+
+        </section>
+        
+        
+        <footer> Himari. All rights reserved @2026</footer>
+    </body>
+</html>
